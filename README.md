@@ -8,7 +8,9 @@ Implement an algorithm to recognize and count the number of occurrence of three 
  (i.e. square, circle, triangle) in a given image. To this purpose there are different methods someone could apply
  (e.g. hard-coded logic, image processing heuristics, shallow machine learning, deep learning, etc).
 
-Here we present a deep learning based solution that well generalizes on the test set.
+Here we present a deep learning based solution that well generalizes on the test set. The dataset consists of 5000 annotated examples:
+  -  JPG image of size 500 x 500 with arbitrary numbers of squares, circles, and triangles.
+  -  Text file stating how many squares, circles, and triangles are in the image.
 
 ![](https://github.com/aymenx17/shapesCount/blob/master/project_imgs/shapesCount.png)
 
@@ -58,7 +60,7 @@ in order: squares, circles, triangles.
 
 The algorithm has been evaluated on 500 images of test set.
 The following metrics will be measured:
-  • Prediction accuracy shape-wise: accuracy over total number of successfully counted shapes in the evaluation set.
-  • Prediction accuracy image-wise: accuracy over total number of images where all shapes were successfully counted.
+  - Prediction accuracy shape-wise: accuracy over total number of successfully counted shapes in the evaluation set.
+  - Prediction accuracy image-wise: accuracy over total number of images where all shapes were successfully counted.
 
 ![](https://github.com/aymenx17/shapesCount/blob/master/project_imgs/shapesCount_accuracy.png)
